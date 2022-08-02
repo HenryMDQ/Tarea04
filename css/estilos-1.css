@@ -1,0 +1,29 @@
+
+
+.container{
+    background-color: rgb(251, 5, 144);
+    width: 90%;
+    margin: 60px;
+    text-align: center;
+}
+
+.div1{
+   
+    width: 95%;
+    margin:2.5%;
+    padding-top: 0.5%;
+    margin-top: 5%;
+    background-color: rgba(240, 248, 255, 0.425);
+}
+
+.comprar{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.imgMario{
+    width: 95%;
+}
