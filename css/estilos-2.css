@@ -1,0 +1,204 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Smooch&display=swap');
+
+
+body{
+    animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #ee6055;
+	}
+	25% {
+		background: #60d394;
+	}
+	50% {
+		background: #aaf683;
+	}
+	75% {
+		background: #ffd97d;
+	}
+	100% {
+		background: #ff9b85;
+	}
+}
+
+header{
+    background-image: linear-gradient(to right, red, white);
+    width: 30%;
+    margin: 30px auto;
+    padding: 30px;
+
+    color: black;
+    font-size: 40px;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-weight:800;
+    text-align: center;
+    text-shadow: 1px 1px 1px #919191,
+    3px 2px 1px #919191,
+    3px 3px 1px #919191,
+    3px 4px 1px #919191,
+    10px 22px 10px rgba(16,16,16,0.8), 
+    10px 25px 35px rgba(16,16,16,0.8), 
+    10px 30px 60px rgba(16,16,16,0.8);
+
+
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+
+.container{
+    background-color: #BC105C;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    text-align:left;
+    padding: 10px;
+    color: white;
+}
+
+.container h2{
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 95%; 
+    color: white;
+    text-shadow: 1px 1px 1px #919191,
+    4px 2px 1px #919191,
+    4px 3px 1px #919191,
+    4px 4px 1px #919191,
+    4px 22px 10px rgba(16,16,16,0.8), 
+    4px 25px 35px rgba(16,16,16,0.8), 
+    4px 30px 60px rgba(16,16,16,0.8);
+}
+div .div1{
+    margin-top: 20px;
+}
+.div1{
+    border-radius: 5px;
+    width: 95%;
+    margin: 10px auto;
+    padding-top: 0.5%;
+    margin-top: 5%;
+    background-color: white;
+    color: #A74565;
+    text-align: center;
+    height: auto;
+}
+.div1 h3 {
+    text-align:right;
+    border-bottom:solid 1px grey;
+    width: 95%;
+    margin: 10px auto;
+}
+.div1 img{
+    margin-left: 25px;
+    width: 45%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.div1 h4{
+    color: black;
+    text-align: left;
+    margin: 5px auto;
+    width: 45%;
+    float:right;
+}
+
+.div1 p {
+    color: black;
+    text-align: left;
+    margin: 10px auto;
+    width: 45%;
+    float:right;
+}
+
+.comprar {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: gray;
+    cursor: pointer; 
+    position: relative;
+    z-index: 0; 
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+.comprar:before {
+    content: '';
+    background: linear-gradient(45deg, #000000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    border-radius: 50px;
+}
+
+
+.comprar:hover:before {
+    opacity: 3;
+}
+
+.comprar:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:violet;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    color: black;
+    
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 22px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+nav img{
+    float: left;
+}
+
+footer{
+    background-color: #E96093;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: small;
+}
