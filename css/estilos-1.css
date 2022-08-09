@@ -110,3 +110,8 @@ footer{
     padding: 10px;
     font-size: small;
 }
+
+
+section img{
+    width: 100%;
+}
